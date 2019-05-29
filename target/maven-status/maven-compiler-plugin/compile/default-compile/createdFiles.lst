@@ -1,0 +1,15 @@
+com\yqlabs\dealerservice\model\VehicleModel.class
+com\yqlabs\dealerservice\model\Price.class
+com\yqlabs\dealerservice\service\DealerStaticServiceImpl.class
+com\yqlabs\dealerservice\model\Vehicle.class
+com\yqlabs\dealerservice\controller\DealerServiceController.class
+com\yqlabs\dealerservice\controller\VehicleController.class
+com\yqlabs\dealerservice\service\VehicleService.class
+com\yqlabs\dealerservice\dao\VehicleDAO.class
+com\yqlabs\dealerservice\controller\DealerStaticController.class
+com\yqlabs\dealerservice\dao\VehicleDAOImpl.class
+com\yqlabs\dealerservice\service\VehicleServiceImpl.class
+com\yqlabs\dealerservice\model\TestDrive.class
+com\yqlabs\dealerservice\service\DealerStaticService.class
+com\yqlabs\dealerservice\model\DealerVarients.class
+com\yqlabs\dealerservice\model\Image.class
