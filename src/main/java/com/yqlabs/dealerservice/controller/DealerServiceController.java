@@ -20,37 +20,37 @@ import org.springframework.web.bind.annotation.RestController;
  * @author yqlabs
  */
 @RestController
-@RequestMapping(path="/dealerservice")
+@RequestMapping(path = "/dealerservice")
 public class DealerServiceController {
-    @Autowired
-    private VehicleService userService;
-        
-        
-        
-	@RequestMapping(path="/{id}", method = RequestMethod.GET, produces = "application/json")
-	public Vehicle getUser(@PathVariable int id){
-		Vehicle user=userService.getUserbyId(id);
+	@Autowired
+	private VehicleService userService;
+
+	/*
+	 * usual comments
+	 */
+
+	@RequestMapping(path = "/{id}", method = RequestMethod.GET, produces = "application/json")
+	public Vehicle getUser(@PathVariable int id) {
+		Vehicle user = userService.getUserbyId(id);
 		return user;
 	}
-	
+
 	@RequestMapping(path = "/all", method = RequestMethod.GET, produces = "application/json")
-	public List<Vehicle> getAllUser(){
-		return userService.getUsers(); 
+	public List<Vehicle> getAllUser() {
+		return userService.getUsers();
 	}
-        	@RequestMapping(path = "/insert", method = RequestMethod.POST, produces = "application/json")
-        public String insertUser(@RequestBody Vehicle user){
-		
-		boolean stats=userService.insertUser(user);
-		
-                if(stats){
+
+	@RequestMapping(path = "/insert", method = RequestMethod.POST, produces = "application/json")
+	public String insertUser(@RequestBody Vehicle user) {
+
+		boolean stats = userService.insertUser(user);
+
+		if (stats) {
 			return "sucessfully inserted";
-		}else
-		{
+		} else {
 			return "Inserting record Fail";
 		}
-               
-        }
-        
-        
-        
+
+	}
+
 }
